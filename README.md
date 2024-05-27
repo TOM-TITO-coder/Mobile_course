@@ -1,4 +1,4 @@
-# assignment_2
+# Introduction To Mobile Application Course
 
 A new Flutter project.
 
