@@ -21,8 +21,8 @@ class _LoginPageState extends State<LoginPage> {
       child: Center(
         child: Padding(
           padding: const EdgeInsets.all(20),
-          child: SingleChildScrollView(
-            child: Column(
+          child: ListView(
+            children: [Column(
               
               children: [
                 const SizedBox(
@@ -46,8 +46,10 @@ class _LoginPageState extends State<LoginPage> {
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(2)),
                     ),
-                    
-                    hintText: "User name",
+                    labelText: "Username",
+                    labelStyle: TextStyle(
+                      color: Colors.grey
+                    ),
                     focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide(
                         color: Colors.blue,
@@ -68,7 +70,10 @@ class _LoginPageState extends State<LoginPage> {
                       borderRadius: BorderRadius.all(Radius.circular(2)),
                     ),
                     
-                    hintText: "Password",
+                    labelText: "Password",
+                    labelStyle: TextStyle(
+                      color: Colors.grey
+                    ),
                     focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide(
                         color: Colors.blue,
@@ -156,7 +161,7 @@ class _LoginPageState extends State<LoginPage> {
                   ],
                 ),
               ],
-            ),
+            ),]
           ),
         ),
       )
